@@ -25,11 +25,6 @@ ArrayList::ArrayList(int size) {
         //item[i] = fmod((double)rand(), 100);
         item[i] = i;
     }
-    
-//    for(int i = 0; i < size; i++) {
-//        printf("item[%d] = %lf\n", i, item[i]);
-//    }
-    
 }
 
 //Labis
