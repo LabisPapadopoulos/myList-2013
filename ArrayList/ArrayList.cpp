@@ -32,7 +32,7 @@ ArrayList::~ArrayList() {
     delete item;
 }
 
-//Labis
+//Maniac
 //epistrofh twn stoixeiwn tis listas san pinaka apo double.
 double* ArrayList::getArrayList() {
     return item;
