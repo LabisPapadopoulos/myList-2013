@@ -83,7 +83,7 @@ int ArrayList::addinPositionNumber(double ari)
 
   srand((int)time(NULL));
   position=rand() % MAX_LENGTH -1;
-
+  
   item[position] += ari;
 
   return position;
@@ -98,7 +98,7 @@ int ArrayList::SubFoundNumber(double ari, int i)
 
   if(ari==item[i]) {
     for(k=i;k<MAX_LENGTH-1;k++) item[k]=item[k+1];
-
+    item[MAX_LENGTH-1]=0; 
     yparxei=0;
   }
 
