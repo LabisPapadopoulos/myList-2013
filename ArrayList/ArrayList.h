@@ -26,6 +26,10 @@ public:
     
     int  addinPositionNumber(double ari);
     int SubFoundNumber(double ari, int i);
+    
+    void ArrayList::DecreaseByX(int position, double x) ;
+    set_n ArrayList::RemoveRandom() ;
+
 private:
     int size;
     double *item;
