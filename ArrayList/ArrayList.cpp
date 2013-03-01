@@ -105,6 +105,21 @@ int ArrayList::SubFoundNumber(double ari, int i)
   return yparxei;
 }
 
+//Maniac
+//Antistrofh ths listas
+double* ArrayList::listReverse() {
+    double *temp = new double[MAX_LENGTH];
+    
+    int lastPosition = MAX_LENGTH - 1;
+    int i = 0;
+    
+    for(;lastPosition > 0; lastPosition--) {
+        temp[i++] = item[lastPosition];
+    }
+    
+    return temp;
+}
+
 //===========================M A I N ============================
 
 int main (int argc, char **argv) {
@@ -113,6 +128,7 @@ int main (int argc, char **argv) {
     
     double *list;
     int thesi;
+    double *temp;
 
     assert(list = arrayList->getArrayList());
     arrayList->printArray(list);
@@ -138,6 +154,9 @@ int main (int argc, char **argv) {
     arrayList->addNumber(100, 50);
     assert(list = arrayList->getArrayList());
     arrayList->printArray(list);
+    
+    assert(temp = arrayList->listReverse());
+    arrayList->printArray(temp);
 
     return 0;
 }
