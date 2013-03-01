@@ -23,6 +23,7 @@ public:
     bool insertNumber(double num, int x);
     void addNumber(double num, int x);
     void printArray(double *array);
+    double *listReverse();
     
     int  addinPositionNumber(double ari);
     int SubFoundNumber(double ari, int i);
