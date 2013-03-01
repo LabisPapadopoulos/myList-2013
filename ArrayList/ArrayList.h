@@ -9,6 +9,12 @@
 
 #define MAX_LENGTH      100
 
+struct set_n
+{
+    double num ;
+    int pos ;
+}
+
 class ArrayList {
 public:
     ArrayList(int size);
